@@ -10,8 +10,8 @@
   * @attention
   *
   * 实验平台:野火 iSO STM32 开发板 
-  * 论坛    :http://www.chuxue123.com
-  * 淘宝    :http://firestm32.taobao.com
+  * 论坛    :http://www.firebbs.cn
+  * 淘宝    :https://fire-stm32.taobao.com
   *
   ******************************************************************************
   */
@@ -34,7 +34,7 @@ void SysTick_Init( void )
 	 * SystemFrequency / 100000	 10us中断一次
 	 * SystemFrequency / 1000000 1us中断一次
 	 */
-	if ( SysTick_Config(SystemCoreClock / 1000) )	// ST3.5.0库版本
+	if ( SysTick_Config(SystemCoreClock / 1000000) )	// ST3.5.0库版本
 	{ 
 		/* Capture error */ 
 		while (1);
@@ -46,12 +46,12 @@ void SysTick_Init( void )
 
 
 /**
-  * @brief   ms延时程序,1ms为一个单位
+  * @brief   ms延时程序,1us为一个单位
   * @param  
-  *		@arg nTime: Delay_ms( 1 ) 则实现的延时为 1 * 1ms = 1ms
+  *		@arg nTime: Delay_us( 1 ) 则实现的延时为 1 * 1us = 1us
   * @retval  无
   */
-void Delay_ms( __IO u32 nTime )
+void Delay_us( __IO u32 nTime )
 { 
 	TimingDelay = nTime;	
 

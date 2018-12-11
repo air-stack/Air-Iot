@@ -26,13 +26,11 @@
 /* Includes ------------------------------------------------------------------*/
 #include "stm32f10x_it.h"
 #include <stdio.h>
+#include <string.h> 
 #include "bsp_SysTick.h"
-#include "bsp_usart2.h"
-#include "wifi_config.h"
+#include "bsp_esp8266.h"
+#include "test.h"
 
-
-//extern void TimingDelay_Decrement(void);
-//extern void USART2_printf(USART_TypeDef* USARTx, char *Data,...);
 
 
 /** @addtogroup STM32F10x_StdPeriph_Template
@@ -156,67 +154,33 @@ void SysTick_Handler(void)
 /*  file (startup_stm32f10x_xx.s).                                            */
 /******************************************************************************/
 /**
-  * @brief  This function handles USART1 Handler.
+  * @brief  This function handles macESP8266_USARTx Handler.
   * @param  None
   * @retval None
   */
-void USART1_IRQHandler( void )
-{
-	u8 ch;
+void macESP8266_USART_INT_FUN ( void )
+{	
+	uint8_t ucCh;
+	
+	if ( USART_GetITStatus ( macESP8266_USARTx, USART_IT_RXNE ) != RESET )
+	{
+		ucCh  = USART_ReceiveData( macESP8266_USARTx );
+		
+		if ( strEsp8266_Fram_Record .InfBit .FramLength < ( RX_BUF_MAX_LEN - 1 ) )                       //预留1个字节写结束符
+			strEsp8266_Fram_Record .Data_RX_BUF [ strEsp8266_Fram_Record .InfBit .FramLength ++ ]  = ucCh;
 
-	if ( USART_GetITStatus( USART1, USART_IT_IDLE ) == SET )                                         //数据帧接收完毕
-	{
-		strUSART1_Fram_Record .Data_RX_BUF [ strUSART1_Fram_Record .InfBit .FramLength ] = '\0'; 
-		strUSART1_Fram_Record .InfBit .FramFinishFlag = 1; 
-		
-		USART2_printf( USART2, "%s", strUSART1_Fram_Record .Data_RX_BUF );                             //通过串口2打印
-		
-		strUSART1_Fram_Record .InfBit .FramLength = 0;
-		
-		ch = USART_ReceiveData( USART1 );                                                              //由软件序列清除中断标志位(先读USART_SR，然后读USART_DR)
-	
-  }
-	
-	if ( USART_GetITStatus( USART1, USART_IT_RXNE ) == SET )                                         //接收到一个数据
-	{
-		ch = USART_ReceiveData( USART1 );
-		
-		strUSART1_Fram_Record .Data_RX_BUF [ strUSART1_Fram_Record .InfBit .FramLength ++ ] = ch;
-
-	} 	
-	 
-}
-
-/**
-  * @brief  This function handles USART2 Handler.
-  * @param  None
-  * @retval None
-  */
-void USART2_IRQHandler( void )
-{ 
-	u8 ch;
-	
-	if ( USART_GetITStatus( USART2, USART_IT_IDLE ) == SET )                                         //数据帧接收完毕
-	{
-		strUSART2_Fram_Record .Data_RX_BUF [ strUSART2_Fram_Record .InfBit .FramLength ] = '\0'; 
-		strUSART2_Fram_Record .InfBit .FramFinishFlag = 1;
-		
-		printf( "%s", strUSART2_Fram_Record .Data_RX_BUF );                                            //通过串口1打印
-		
-		strUSART2_Fram_Record .InfBit .FramLength = 0;
-		
-		ch = USART_ReceiveData( USART2 );                                                              //由软件序列清除中断标志位(先读USART_SR，然后读USART_DR)
-	
-  }
-	
-	if ( USART_GetITStatus( USART2, USART_IT_RXNE ) == SET )                                         //接收到一个数据
-	{
-		ch = USART_ReceiveData( USART2 );
-		
-		strUSART2_Fram_Record .Data_RX_BUF [ strUSART2_Fram_Record .InfBit .FramLength ++ ] = ch;
-		
-	} 
+	}
 	 	 
+	if ( USART_GetITStatus( macESP8266_USARTx, USART_IT_IDLE ) == SET )                                         //数据帧接收完毕
+	{
+    strEsp8266_Fram_Record .InfBit .FramFinishFlag = 1;
+		
+		ucCh = USART_ReceiveData( macESP8266_USARTx );                                                              //由软件序列清除中断标志位(先读USART_SR，然后读USART_DR)
+	
+		ucTcpClosedFlag = strstr ( strEsp8266_Fram_Record .Data_RX_BUF, "CLOSED\r\n" ) ? 1 : 0;
+		
+  }	
+
 }
 
 
