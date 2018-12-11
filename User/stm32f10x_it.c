@@ -26,7 +26,7 @@
 /* Includes ------------------------------------------------------------------*/
 #include "stm32f10x_it.h"
 #include <stdio.h>
-#include <string.h> 
+#include <string.h>
 #include "bsp_SysTick.h"
 #include "bsp_esp8266.h"
 #include "test.h"
@@ -53,8 +53,7 @@
   * @param  None
   * @retval None
   */
-void NMI_Handler(void)
-{
+void NMI_Handler(void) {
 }
 
 /**
@@ -62,12 +61,10 @@ void NMI_Handler(void)
   * @param  None
   * @retval None
   */
-void HardFault_Handler(void)
-{
-  /* Go to infinite loop when Hard Fault exception occurs */
-  while (1)
-  {
-  }
+void HardFault_Handler(void) {
+    /* Go to infinite loop when Hard Fault exception occurs */
+    while (1) {
+    }
 }
 
 /**
@@ -75,12 +72,10 @@ void HardFault_Handler(void)
   * @param  None
   * @retval None
   */
-void MemManage_Handler(void)
-{
-  /* Go to infinite loop when Memory Manage exception occurs */
-  while (1)
-  {
-  }
+void MemManage_Handler(void) {
+    /* Go to infinite loop when Memory Manage exception occurs */
+    while (1) {
+    }
 }
 
 /**
@@ -88,12 +83,10 @@ void MemManage_Handler(void)
   * @param  None
   * @retval None
   */
-void BusFault_Handler(void)
-{
-  /* Go to infinite loop when Bus Fault exception occurs */
-  while (1)
-  {
-  }
+void BusFault_Handler(void) {
+    /* Go to infinite loop when Bus Fault exception occurs */
+    while (1) {
+    }
 }
 
 /**
@@ -101,12 +94,10 @@ void BusFault_Handler(void)
   * @param  None
   * @retval None
   */
-void UsageFault_Handler(void)
-{
-  /* Go to infinite loop when Usage Fault exception occurs */
-  while (1)
-  {
-  }
+void UsageFault_Handler(void) {
+    /* Go to infinite loop when Usage Fault exception occurs */
+    while (1) {
+    }
 }
 
 /**
@@ -114,8 +105,7 @@ void UsageFault_Handler(void)
   * @param  None
   * @retval None
   */
-void SVC_Handler(void)
-{
+void SVC_Handler(void) {
 }
 
 /**
@@ -123,8 +113,7 @@ void SVC_Handler(void)
   * @param  None
   * @retval None
   */
-void DebugMon_Handler(void)
-{
+void DebugMon_Handler(void) {
 }
 
 /**
@@ -132,8 +121,7 @@ void DebugMon_Handler(void)
   * @param  None
   * @retval None
   */
-void PendSV_Handler(void)
-{
+void PendSV_Handler(void) {
 }
 
 /**
@@ -141,9 +129,8 @@ void PendSV_Handler(void)
   * @param  None
   * @retval None
   */
-void SysTick_Handler(void)
-{
-	TimingDelay_Decrement();	
+void SysTick_Handler(void) {
+    TimingDelay_Decrement();
 }
 
 
@@ -158,28 +145,27 @@ void SysTick_Handler(void)
   * @param  None
   * @retval None
   */
-void macESP8266_USART_INT_FUN ( void )
-{	
-	uint8_t ucCh;
-	
-	if ( USART_GetITStatus ( macESP8266_USARTx, USART_IT_RXNE ) != RESET )
-	{
-		ucCh  = USART_ReceiveData( macESP8266_USARTx );
-		
-		if ( strEsp8266_Fram_Record .InfBit .FramLength < ( RX_BUF_MAX_LEN - 1 ) )                       //预留1个字节写结束符
-			strEsp8266_Fram_Record .Data_RX_BUF [ strEsp8266_Fram_Record .InfBit .FramLength ++ ]  = ucCh;
+void macESP8266_USART_INT_FUN(void) {
+    uint8_t ucCh;
 
-	}
-	 	 
-	if ( USART_GetITStatus( macESP8266_USARTx, USART_IT_IDLE ) == SET )                                         //数据帧接收完毕
-	{
-    strEsp8266_Fram_Record .InfBit .FramFinishFlag = 1;
-		
-		ucCh = USART_ReceiveData( macESP8266_USARTx );                                                              //由软件序列清除中断标志位(先读USART_SR，然后读USART_DR)
-	
-		ucTcpClosedFlag = strstr ( strEsp8266_Fram_Record .Data_RX_BUF, "CLOSED\r\n" ) ? 1 : 0;
-		
-  }	
+    if (USART_GetITStatus(macESP8266_USARTx, USART_IT_RXNE) != RESET) {
+        ucCh = USART_ReceiveData(macESP8266_USARTx);
+
+        if (strEsp8266_Fram_Record.InfBit.FramLength < (RX_BUF_MAX_LEN - 1))                       //预留1个字节写结束符
+            strEsp8266_Fram_Record.Data_RX_BUF[strEsp8266_Fram_Record.InfBit.FramLength++] = ucCh;
+
+    }
+
+    if (USART_GetITStatus(macESP8266_USARTx, USART_IT_IDLE) == SET)                                         //数据帧接收完毕
+    {
+        strEsp8266_Fram_Record.InfBit.FramFinishFlag = 1;
+
+        ucCh = USART_ReceiveData(
+                macESP8266_USARTx);                                                              //由软件序列清除中断标志位(先读USART_SR，然后读USART_DR)
+
+        ucTcpClosedFlag = strstr(strEsp8266_Fram_Record.Data_RX_BUF, "CLOSED\r\n") ? 1 : 0;
+
+    }
 
 }
 
@@ -195,7 +181,7 @@ void macESP8266_USART_INT_FUN ( void )
 
 /**
   * @}
-  */ 
+  */
 
 
 /******************* (C) COPYRIGHT 2011 STMicroelectronics *****END OF FILE****/

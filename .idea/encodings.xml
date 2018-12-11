@@ -1,9 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="Encoding">
+    <file url="file://$PROJECT_DIR$/Doc/readme.txt" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/User/Common/Common.c" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/User/Common/Common.h" charset="GBK" />
     <file url="file://$PROJECT_DIR$/User/ESP8266/bsp_esp8266.c" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/User/ESP8266/bsp_esp8266.h" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/User/SysTick/bsp_SysTick.c" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/User/SysTick/bsp_SysTick.h" charset="GBK" />
     <file url="file://$PROJECT_DIR$/User/Test/test.c" charset="GBK" />
     <file url="file://$PROJECT_DIR$/User/Test/test.h" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/User/dht11/bsp_dht11.c" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/User/dht11/bsp_dht11.h" charset="GBK" />
     <file url="file://$PROJECT_DIR$/User/main.c" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/User/stm32f10x_it.c" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/User/usart/bsp_usart1.c" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/User/usart/bsp_usart1.h" charset="GBK" />
   </component>
 </project>
