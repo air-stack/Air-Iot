@@ -43,12 +43,18 @@ void ESP8266_StaTcpClient_UnvarnishTest(void) {
 
 
     while (1) {
-        if (DHT11_Read_TempAndHumidity(&DHT11_Data) == SUCCESS)       //读取 DHT11 温湿度信息
-            sprintf(cStr, "\r\n读取DHT11成功!\r\n\r\n湿度为%d.%d ％RH ，温度为 %d.%d℃ \r\n",
-                    DHT11_Data.humi_int, DHT11_Data.humi_deci, DHT11_Data.temp_int, DHT11_Data.temp_deci);
 
+        // FIXME 发送DHT11温湿度数据 检测到数据
+        if (DHT11_Read_TempAndHumidity(&DHT11_Data) == SUCCESS)       //读取 DHT11 温湿度信息
+        {
+            sprintf(cStr,
+                    "\r\n读取DHT11成功!\r\n\r\n湿度为%d.%d ％RH ，温度为 %d.%d℃ \r\n",
+                    DHT11_Data.humi_int, DHT11_Data.humi_deci, DHT11_Data.temp_int, DHT11_Data.temp_deci);
+        }
+
+            // FIXME 发送DHT11温湿度数据 未检测到传感器 默认数据
         else
-            sprintf(cStr, "Read DHT11 ERROR!\r\n");
+            sprintf(cStr, "A00F2412080F111E1401112233445566778899AABBCCDDEEFF01190200FA00000000FFFF\r\n");
 
         printf("%s", cStr);                                             //打印读取 DHT11 温湿度信息
 

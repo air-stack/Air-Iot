@@ -17,7 +17,7 @@
 #define      macUser_ESP8266_TcpServer_IP     "192.168.43.74"
 
 //要连接的服务器的端口
-#define      macUser_ESP8266_TcpServer_Port    "8080"
+#define      macUser_ESP8266_TcpServer_Port    "2759"
 
 
 /********************************** 外部全局变量 ***************************************/
