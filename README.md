@@ -4,7 +4,7 @@
 
 ## 技术栈
 
-> Stm32F103芯片 + WIFI ESP8266模块 + Sensor传感器 
+> Stm32F103芯片 + WIFI ESP8266模块 + Sensor传感器 (DHT11温湿度传感器)
 
 ## IDE 
 
@@ -14,8 +14,8 @@
 
 ## 网络调试
 
-1. 网络调试工具 NetAssist.exe
-2. 运行服务端程序 **[Air-Server](https://github.com/kevinten10/Air-Server)**
+1. 运行网络调试工具 NetAssist.exe ， 直接查看TCP接收数据信息
+2. 运行服务端程序 **[Air-Server](https://github.com/kevinten10/Air-Server)**，完成数据的网络通信流程
 
 ## 配置说明
 
