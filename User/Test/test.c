@@ -48,7 +48,7 @@ void ESP8266_StaTcpClient_UnvarnishTest(void) {
         if (DHT11_Read_TempAndHumidity(&DHT11_Data) == SUCCESS)       //读取 DHT11 温湿度信息
         {
             sprintf(cStr,
-                    "\r\n读取DHT11成功!\r\n\r\n湿度为%d.%d ％RH ，温度为 %d.%d℃ \r\n",
+                    "\r\n{temp:%d.%d,pm25:%d%d}\r\n",
                     DHT11_Data.humi_int, DHT11_Data.humi_deci, DHT11_Data.temp_int, DHT11_Data.temp_deci);
         }
 
