@@ -8,7 +8,7 @@
   ******************************************************************************
   * @attention
   *
-  * 实验平台:野火 iSO STM32 开发板 
+  * 实验平台 :野火 iSO STM32 开发板
   * 论坛    :http://www.firebbs.cn
   * 淘宝    :https://fire-stm32.taobao.com
   *
@@ -21,7 +21,7 @@
 #include "bsp_esp8266.h"
 #include "test.h"
 #include "bsp_dht11.h"
-
+#include "bsp_gp2y.h"
 
 /**
   * @brief  主函数
@@ -29,22 +29,25 @@
   * @retval 无
   */
 int main(void) {
-    /* 初始化 */
-    USARTx_Config();                                                              //初始化串口1
-    SysTick_Init();                                                               //配置 SysTick 为 1ms 中断一次
-    ESP8266_Init();                                                               //初始化WiFi模块使用的接口和外设
+    // 初始化串口1
+    USARTx_Config();
+    // 配置 SysTick 为 1ms 中断一次
+    SysTick_Init();
+
+    // 初始化WiFi模块使用的接口和外设
+    ESP8266_Init();
+    // 初始化DHT11温湿度传感器模块
     DHT11_Init();
+    // 初始化PM25传感器模块
+    PM_Init();
 
+    // 打印测试例程提示信息
+    printf("\r\nAir Iot Starting...\r\n");
 
-    printf("\r\n野火 WF-ESP8266 WiFi模块测试例程\r\n");                          //打印测试例程提示信息
-
-
+    // WIFI透传发送数据
     ESP8266_StaTcpClient_UnvarnishTest();
 
-
     while (1);
-
-
 }
 
 

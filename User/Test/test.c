@@ -5,10 +5,9 @@
 #include <string.h>
 #include <stdbool.h>
 #include "bsp_dht11.h"
-
+#include "bsp_gp2y.h"
 
 volatile uint8_t ucTcpClosedFlag = 0;
-
 
 /**
   * @brief  ESP8266 （Sta Tcp Client）透传
@@ -20,10 +19,12 @@ void ESP8266_StaTcpClient_UnvarnishTest(void) {
 
     char cStr[100] = {0};
 
+    // DHT11数据结构体
     DHT11_Data_TypeDef DHT11_Data;
+    // PM25数据结构体
+    PM_Data_TypeDef PM_Data;
 
-
-    printf("\r\n正在配置 ESP8266 ......\r\n");
+    printf("\r\n正在配置 ESP8266 WIFI模块......\r\n");
 
     macESP8266_CH_ENABLE();
 
@@ -41,37 +42,49 @@ void ESP8266_StaTcpClient_UnvarnishTest(void) {
 
     printf("\r\n配置 ESP8266 完毕\r\n");
 
-
+    // 数据循环读取发送
     while (1) {
 
-        // FIXME 发送DHT11温湿度数据 检测到数据
-        if (DHT11_Read_TempAndHumidity(&DHT11_Data) == SUCCESS)       //读取 DHT11 温湿度信息
-        {
+        // FIXME 读取PM25传感器模块数据
+        if (PM_Read_DATA(&PM_Data) == SUCCESS) {
+            sprintf(cStr,
+                    "\r\n{voutH:%d,voutL:%d,vrefH:%d,vrefL:%d}\r\n",
+                    PM_Data.voutH, PM_Data.voutL, PM_Data.vrefH, PM_Data.vrefL);
+        } else
+            sprintf(cStr, "PM25数据监测失败\r\n");
+
+        // 打印待发送数据到WIFI消息队列
+        printf("%s", cStr);
+        // 通过WIFI发送数据字符串
+        ESP8266_SendString(ENABLE, cStr, 0, Single_ID_0);
+
+        // FIXME 读取DHT11温湿度传感器数据
+        if (DHT11_Read_TempAndHumidity(&DHT11_Data) == SUCCESS) {
             sprintf(cStr,
                     "\r\n{temp:%d.%d,pm25:%d%d}\r\n",
                     DHT11_Data.humi_int, DHT11_Data.humi_deci, DHT11_Data.temp_int, DHT11_Data.temp_deci);
-        }
-
-            // FIXME 发送DHT11温湿度数据 未检测到传感器 默认数据
-        else
-            sprintf(cStr, "A00F2412080F111E1401112233445566778899AABBCCDDEEFF01190200FA00000000FFFF\r\n");
-
-        printf("%s", cStr);                                             //打印读取 DHT11 温湿度信息
+        } else
+            sprintf(cStr, "DHT11数据监测失败\r\n");
 
 
-        ESP8266_SendString(ENABLE, cStr, 0, Single_ID_0);               //发送 DHT11 温湿度信息到网络调试助手
+        // 打印待发送数据到WIFI消息队列
+        printf("%s", cStr);
+        // 通过WIFI发送数据字符串
+        ESP8266_SendString(ENABLE, cStr, 0, Single_ID_0);
 
         Delay_ms(1000);
 
-        if (ucTcpClosedFlag)                                             //检测是否失去连接
-        {
-            ESP8266_ExitUnvarnishSend();                                    //退出透传模式
+        // 检测是否失去连接
+        if (ucTcpClosedFlag) {
+            // 退出透传模式
+            ESP8266_ExitUnvarnishSend();
 
-            do ucStatus = ESP8266_Get_LinkStatus();                         //获取连接状态
+            // 获取连接状态
+            do ucStatus = ESP8266_Get_LinkStatus();
             while (!ucStatus);
 
-            if (ucStatus == 4)                                             //确认失去连接后重连
-            {
+            // 确认失去连接后重连
+            if (ucStatus == 4) {
                 printf("\r\n正在重连热点和服务器 ......\r\n");
 
                 while (!ESP8266_JoinAP(macUser_ESP8266_ApSsid, macUser_ESP8266_ApPwd));
@@ -88,7 +101,6 @@ void ESP8266_StaTcpClient_UnvarnishTest(void) {
         }
 
     }
-
 
 }
 

@@ -18,3 +18,4 @@
 ..\..\output\test.o: ..\..\User\SysTick\bsp_SysTick.h
 ..\..\output\test.o: D:\MDK\ARM\ARMCC\Bin\..\include\string.h
 ..\..\output\test.o: ..\..\User\dht11\bsp_dht11.h
+..\..\output\test.o: ..\..\User\gp2y\bsp_gp2y.h

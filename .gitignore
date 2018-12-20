@@ -1,0 +1,4 @@
+# Created by .ignore support plugin (hsz.mobi)
+.idea/.name
+CMakeLists.txt
+cmake-build-default/

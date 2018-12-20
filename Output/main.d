@@ -18,3 +18,4 @@
 ..\..\output\main.o: D:\MDK\ARM\ARMCC\Bin\..\include\stdbool.h
 ..\..\output\main.o: ..\..\User\Test\test.h
 ..\..\output\main.o: ..\..\User\dht11\bsp_dht11.h
+..\..\output\main.o: ..\..\User\gp2y\bsp_gp2y.h
