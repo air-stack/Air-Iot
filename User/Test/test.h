@@ -13,7 +13,7 @@
 #define      macUser_ESP8266_ApPwd            "wangshihao"
 
 // 要连接的服务器的IP，即电脑的IP，Windows请使用ipconfig命令查看
-#define      macUser_ESP8266_TcpServer_IP     "192.168.43.74"
+#define      macUser_ESP8266_TcpServer_IP     "47.100.236.64"
 
 // 要连接的服务器的端口
 #define      macUser_ESP8266_TcpServer_Port    "2759"

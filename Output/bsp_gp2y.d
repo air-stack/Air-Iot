@@ -1,0 +1,14 @@
+..\..\output\bsp_gp2y.o: ..\..\User\gp2y\bsp_gp2y.c
+..\..\output\bsp_gp2y.o: ..\..\User\gp2y\bsp_gp2y.h
+..\..\output\bsp_gp2y.o: ..\..\Libraries\CMSIS\stm32f10x.h
+..\..\output\bsp_gp2y.o: ..\..\Libraries\CMSIS\core_cm3.h
+..\..\output\bsp_gp2y.o: D:\MDK\ARM\ARMCC\Bin\..\include\stdint.h
+..\..\output\bsp_gp2y.o: ..\..\Libraries\CMSIS\system_stm32f10x.h
+..\..\output\bsp_gp2y.o: ..\..\User\stm32f10x_conf.h
+..\..\output\bsp_gp2y.o: ..\..\Libraries\FWlib\inc\stm32f10x_gpio.h
+..\..\output\bsp_gp2y.o: ..\..\Libraries\CMSIS\stm32f10x.h
+..\..\output\bsp_gp2y.o: ..\..\Libraries\FWlib\inc\stm32f10x_rcc.h
+..\..\output\bsp_gp2y.o: ..\..\Libraries\FWlib\inc\stm32f10x_tim.h
+..\..\output\bsp_gp2y.o: ..\..\Libraries\FWlib\inc\stm32f10x_usart.h
+..\..\output\bsp_gp2y.o: ..\..\Libraries\FWlib\inc\misc.h
+..\..\output\bsp_gp2y.o: ..\..\User\SysTick\bsp_SysTick.h

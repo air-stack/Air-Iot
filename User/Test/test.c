@@ -18,6 +18,9 @@ void ESP8266_StaTcpClient_UnvarnishTest(void) {
     uint8_t ucStatus;
 
     char cStr[100] = {0};
+		
+		// IMEI 15BYTE
+		char imei[30] = {'1','1','2','2','3','3','4','4','5','5','6','6','7','7','8','8','9','9','A','A','B','B','C','C','D','D','E','E','F','F'};
 
     // DHT11数据结构体
     DHT11_Data_TypeDef DHT11_Data;
@@ -48,10 +51,10 @@ void ESP8266_StaTcpClient_UnvarnishTest(void) {
         // FIXME 读取PM25传感器模块数据
         if (PM_Read_DATA(&PM_Data) == SUCCESS) {
             sprintf(cStr,
-                    "\r\n{voutH:%d,voutL:%d,vrefH:%d,vrefL:%d}\r\n",
-                    PM_Data.voutH, PM_Data.voutL, PM_Data.vrefH, PM_Data.vrefL);
+					"G{imei:\"%s\",start:\"%d\",voutH:\"%d\",voutL:\"%d\",vrefH:\"%d\",vrefL:\"%d\",check:\"%d\",finish:\"%d\"}",
+                   imei,PM_Data.start,PM_Data.voutH, PM_Data.voutL, PM_Data.vrefH, PM_Data.vrefL, PM_Data.check_sum, PM_Data.finish);
         } else
-            sprintf(cStr, "PM25数据监测失败\r\n");
+            sprintf(cStr, "PM25 Monitoring failure...");
 
         // 打印待发送数据到WIFI消息队列
         printf("%s", cStr);
@@ -61,10 +64,10 @@ void ESP8266_StaTcpClient_UnvarnishTest(void) {
         // FIXME 读取DHT11温湿度传感器数据
         if (DHT11_Read_TempAndHumidity(&DHT11_Data) == SUCCESS) {
             sprintf(cStr,
-                    "\r\n{temp:%d.%d,pm25:%d%d}\r\n",
-                    DHT11_Data.humi_int, DHT11_Data.humi_deci, DHT11_Data.temp_int, DHT11_Data.temp_deci);
+					"D{imei:\"%s\",tempInt:\"%d\",tempDeci:\"%d\",humiInt:\"%d\",humiDeci:\"%d\"}",
+                    imei,DHT11_Data.humi_int, DHT11_Data.humi_deci, DHT11_Data.temp_int, DHT11_Data.temp_deci);
         } else
-            sprintf(cStr, "DHT11数据监测失败\r\n");
+            sprintf(cStr, "DHT11 Monitoring failure...");
 
 
         // 打印待发送数据到WIFI消息队列
