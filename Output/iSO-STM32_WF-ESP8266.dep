@@ -305,7 +305,7 @@ I (..\..\User\SysTick\bsp_SysTick.h)(0x5C165B17)
 I (..\..\User\ESP8266\bsp_esp8266.h)(0x5C165B17)
 I (..\..\User\Common\common.h)(0x5C165B17)
 I (D:\MDK\ARM\ARMCC\include\stdbool.h)(0x599EDB3E)
-I (..\..\User\Test\test.h)(0x5C2033F2)
+I (..\..\User\Test\test.h)(0x5CD91E17)
 I (..\..\User\dht11\bsp_dht11.h)(0x5C165B17)
 I (..\..\User\gp2y\bsp_gp2y.h)(0x5C1B0665)
 F (..\..\User\stm32f10x_conf.h)(0x5C165B17)()
@@ -327,7 +327,7 @@ I (..\..\User\SysTick\bsp_SysTick.h)(0x5C165B17)
 I (..\..\User\ESP8266\bsp_esp8266.h)(0x5C165B17)
 I (..\..\User\Common\common.h)(0x5C165B17)
 I (D:\MDK\ARM\ARMCC\include\stdbool.h)(0x599EDB3E)
-I (..\..\User\Test\test.h)(0x5C2033F2)
+I (..\..\User\Test\test.h)(0x5CD91E17)
 F (..\..\User\stm32f10x_it.h)(0x5C165B17)()
 F (..\..\User\usart\bsp_usart1.c)(0x5C165B17)(-c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork -I ..\..\User\gp2y -I ..\..\Libraries\CMSIS -I ..\..\User -I ..\..\Libraries\FWlib\inc -I ..\..\User\gpio -I ..\..\User\SysTick -I ..\..\User\usart -I ..\..\User\Common -I ..\..\User\ESP8266 -I ..\..\User\Test -I ..\..\User\dht11-I.\RTE\_WF-ESP8266-ID:\MDK\ARM\PACK\ARM\CMSIS\5.4.0\CMSIS\Core\Include-ID:\MDK\ARM\PACK\Keil\STM32F1xx_DFP\2.3.0\Device\Include-D__UVISION_VERSION="526" -D_RTE_ -DSTM32F10X_HD -DSTM32F10X_HD -DUSE_STDPERIPH_DRIVER-o ..\..\output\bsp_usart1.o --omf_browse ..\..\output\bsp_usart1.crf --depend ..\..\output\bsp_usart1.d)
 I (..\..\User\usart\bsp_usart1.h)(0x5C165B17)
@@ -398,7 +398,7 @@ I (..\..\Libraries\FWlib\inc\stm32f10x_usart.h)(0x5C165B17)
 I (..\..\Libraries\FWlib\inc\misc.h)(0x5C165B17)
 I (..\..\User\SysTick\bsp_SysTick.h)(0x5C165B17)
 F (..\..\User\Test\test.c)(0x5C1C658C)(-c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork -I ..\..\User\gp2y -I ..\..\Libraries\CMSIS -I ..\..\User -I ..\..\Libraries\FWlib\inc -I ..\..\User\gpio -I ..\..\User\SysTick -I ..\..\User\usart -I ..\..\User\Common -I ..\..\User\ESP8266 -I ..\..\User\Test -I ..\..\User\dht11-I.\RTE\_WF-ESP8266-ID:\MDK\ARM\PACK\ARM\CMSIS\5.4.0\CMSIS\Core\Include-ID:\MDK\ARM\PACK\Keil\STM32F1xx_DFP\2.3.0\Device\Include-D__UVISION_VERSION="526" -D_RTE_ -DSTM32F10X_HD -DSTM32F10X_HD -DUSE_STDPERIPH_DRIVER-o ..\..\output\test.o --omf_browse ..\..\output\test.crf --depend ..\..\output\test.d)
-I (..\..\User\Test\test.h)(0x5C2033F2)
+I (..\..\User\Test\test.h)(0x5CD91E17)
 I (..\..\Libraries\CMSIS\stm32f10x.h)(0x5C165B17)
 I (..\..\Libraries\CMSIS\core_cm3.h)(0x5C165B17)
 I (D:\MDK\ARM\ARMCC\include\stdint.h)(0x599EDB3E)

@@ -11,7 +11,52 @@
   <component name="ChangeListManager">
     <list default="true" id="76b7d0a5-81d9-4410-9a8f-9df418c765a0" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Listing/Template.map" beforeDir="false" afterPath="$PROJECT_DIR$/Listing/Template.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Output/Template.axf" beforeDir="false" afterPath="$PROJECT_DIR$/Output/Template.axf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Output/Template.build_log.htm" beforeDir="false" afterPath="$PROJECT_DIR$/Output/Template.build_log.htm" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Output/Template.hex" beforeDir="false" afterPath="$PROJECT_DIR$/Output/Template.hex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Output/Template.htm" beforeDir="false" afterPath="$PROJECT_DIR$/Output/Template.htm" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Output/bsp_dht11.o" beforeDir="false" afterPath="$PROJECT_DIR$/Output/bsp_dht11.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Output/bsp_esp8266.o" beforeDir="false" afterPath="$PROJECT_DIR$/Output/bsp_esp8266.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Output/bsp_gp2y.o" beforeDir="false" afterPath="$PROJECT_DIR$/Output/bsp_gp2y.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Output/bsp_systick.o" beforeDir="false" afterPath="$PROJECT_DIR$/Output/bsp_systick.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Output/bsp_usart1.o" beforeDir="false" afterPath="$PROJECT_DIR$/Output/bsp_usart1.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Output/common.o" beforeDir="false" afterPath="$PROJECT_DIR$/Output/common.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Output/core_cm3.o" beforeDir="false" afterPath="$PROJECT_DIR$/Output/core_cm3.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Output/iSO-STM32_WF-ESP8266.dep" beforeDir="false" afterPath="$PROJECT_DIR$/Output/iSO-STM32_WF-ESP8266.dep" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Output/main.crf" beforeDir="false" afterPath="$PROJECT_DIR$/Output/main.crf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Output/main.o" beforeDir="false" afterPath="$PROJECT_DIR$/Output/main.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Output/misc.o" beforeDir="false" afterPath="$PROJECT_DIR$/Output/misc.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Output/stm32f10x_adc.o" beforeDir="false" afterPath="$PROJECT_DIR$/Output/stm32f10x_adc.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Output/stm32f10x_bkp.o" beforeDir="false" afterPath="$PROJECT_DIR$/Output/stm32f10x_bkp.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Output/stm32f10x_can.o" beforeDir="false" afterPath="$PROJECT_DIR$/Output/stm32f10x_can.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Output/stm32f10x_cec.o" beforeDir="false" afterPath="$PROJECT_DIR$/Output/stm32f10x_cec.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Output/stm32f10x_crc.o" beforeDir="false" afterPath="$PROJECT_DIR$/Output/stm32f10x_crc.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Output/stm32f10x_dac.o" beforeDir="false" afterPath="$PROJECT_DIR$/Output/stm32f10x_dac.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Output/stm32f10x_dbgmcu.o" beforeDir="false" afterPath="$PROJECT_DIR$/Output/stm32f10x_dbgmcu.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Output/stm32f10x_dma.o" beforeDir="false" afterPath="$PROJECT_DIR$/Output/stm32f10x_dma.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Output/stm32f10x_exti.o" beforeDir="false" afterPath="$PROJECT_DIR$/Output/stm32f10x_exti.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Output/stm32f10x_flash.o" beforeDir="false" afterPath="$PROJECT_DIR$/Output/stm32f10x_flash.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Output/stm32f10x_fsmc.o" beforeDir="false" afterPath="$PROJECT_DIR$/Output/stm32f10x_fsmc.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Output/stm32f10x_gpio.o" beforeDir="false" afterPath="$PROJECT_DIR$/Output/stm32f10x_gpio.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Output/stm32f10x_i2c.o" beforeDir="false" afterPath="$PROJECT_DIR$/Output/stm32f10x_i2c.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Output/stm32f10x_it.crf" beforeDir="false" afterPath="$PROJECT_DIR$/Output/stm32f10x_it.crf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Output/stm32f10x_it.o" beforeDir="false" afterPath="$PROJECT_DIR$/Output/stm32f10x_it.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Output/stm32f10x_iwdg.o" beforeDir="false" afterPath="$PROJECT_DIR$/Output/stm32f10x_iwdg.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Output/stm32f10x_pwr.o" beforeDir="false" afterPath="$PROJECT_DIR$/Output/stm32f10x_pwr.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Output/stm32f10x_rcc.o" beforeDir="false" afterPath="$PROJECT_DIR$/Output/stm32f10x_rcc.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Output/stm32f10x_rtc.o" beforeDir="false" afterPath="$PROJECT_DIR$/Output/stm32f10x_rtc.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Output/stm32f10x_sdio.o" beforeDir="false" afterPath="$PROJECT_DIR$/Output/stm32f10x_sdio.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Output/stm32f10x_spi.o" beforeDir="false" afterPath="$PROJECT_DIR$/Output/stm32f10x_spi.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Output/stm32f10x_tim.o" beforeDir="false" afterPath="$PROJECT_DIR$/Output/stm32f10x_tim.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Output/stm32f10x_usart.o" beforeDir="false" afterPath="$PROJECT_DIR$/Output/stm32f10x_usart.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Output/stm32f10x_wwdg.o" beforeDir="false" afterPath="$PROJECT_DIR$/Output/stm32f10x_wwdg.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Output/system_stm32f10x.o" beforeDir="false" afterPath="$PROJECT_DIR$/Output/system_stm32f10x.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Output/test.crf" beforeDir="false" afterPath="$PROJECT_DIR$/Output/test.crf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Output/test.o" beforeDir="false" afterPath="$PROJECT_DIR$/Output/test.o" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Project/RVMDK（uv5）/iSO-STM32.uvguix.59682" beforeDir="false" afterPath="$PROJECT_DIR$/Project/RVMDK（uv5）/iSO-STM32.uvguix.59682" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project/RVMDK（uv5）/iSO-STM32.uvoptx" beforeDir="false" afterPath="$PROJECT_DIR$/Project/RVMDK（uv5）/iSO-STM32.uvoptx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/User/Test/test.h" beforeDir="false" afterPath="$PROJECT_DIR$/User/Test/test.h" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/cmake-build-default/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -55,33 +100,34 @@
     <session id="-1553598539">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="13" />
+          <entry key="project.closed" value="14" />
           <entry key="project.open.time.0" value="1" />
           <entry key="project.open.time.12" value="1" />
           <entry key="project.open.time.20" value="1" />
           <entry key="project.open.time.21" value="1" />
           <entry key="project.open.time.23" value="1" />
           <entry key="project.open.time.26" value="1" />
-          <entry key="project.open.time.27" value="1" />
+          <entry key="project.open.time.27" value="2" />
           <entry key="project.open.time.32" value="2" />
           <entry key="project.open.time.34" value="1" />
           <entry key="project.open.time.35" value="1" />
+          <entry key="project.open.time.47" value="1" />
           <entry key="project.open.time.49" value="1" />
           <entry key="project.open.time.53" value="1" />
           <entry key="project.open.time.71" value="1" />
-          <entry key="project.opened" value="14" />
+          <entry key="project.opened" value="16" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="c" value="53" />
+          <entry key="c" value="62" />
           <entry key="gitignore" value="1" />
-          <entry key="h" value="44" />
+          <entry key="h" value="47" />
           <entry key="htm" value="1" />
           <entry key="lst" value="1" />
           <entry key="map" value="4" />
           <entry key="md" value="5" />
-          <entry key="png" value="6" />
+          <entry key="png" value="10" />
           <entry key="txt" value="4" />
         </counts>
       </usages-collector>
@@ -90,9 +136,9 @@
           <entry key="CMakeLists.txt" value="1" />
           <entry key="Git file" value="1" />
           <entry key="HTML" value="1" />
-          <entry key="Image" value="6" />
+          <entry key="Image" value="10" />
           <entry key="Markdown" value="5" />
-          <entry key="ObjectiveC" value="97" />
+          <entry key="ObjectiveC" value="109" />
           <entry key="PLAIN_TEXT" value="8" />
         </counts>
       </usages-collector>
@@ -100,16 +146,16 @@
         <counts>
           <entry key="c" value="874" />
           <entry key="gitignore" value="1" />
-          <entry key="h" value="233" />
-          <entry key="md" value="1040" />
+          <entry key="h" value="261" />
+          <entry key="md" value="1062" />
           <entry key="txt" value="137" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="Git file" value="1" />
-          <entry key="Markdown" value="1040" />
-          <entry key="ObjectiveC" value="1107" />
+          <entry key="Markdown" value="1062" />
+          <entry key="ObjectiveC" value="1135" />
           <entry key="PLAIN_TEXT" value="137" />
         </counts>
       </usages-collector>
@@ -117,21 +163,21 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/User/Test/test.c">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1197">
-              <caret line="57" selection-start-line="57" selection-end-line="57" />
+            <state relative-caret-position="231">
+              <caret line="47" column="15" lean-forward="true" selection-start-line="47" selection-start-column="15" selection-end-line="47" selection-end-column="15" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-            <state split_layout="SPLIT">
-              <first_editor relative-caret-position="250">
-                <caret line="71" column="26" selection-start-line="71" selection-start-column="26" selection-end-line="71" selection-end-column="26" />
+            <state split_layout="SECOND">
+              <first_editor relative-caret-position="105">
+                <caret line="50" selection-start-line="50" selection-end-line="50" />
               </first_editor>
               <second_editor />
             </state>
@@ -139,10 +185,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/User/Common/Common.c">
+        <entry file="file://$PROJECT_DIR$/User/Test/test.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="378">
-              <caret line="18" column="22" selection-start-line="18" selection-start-column="22" selection-end-line="18" selection-end-column="22" />
+            <state relative-caret-position="357">
+              <caret line="17" column="13" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
             </state>
           </provider>
         </entry>
@@ -261,8 +307,8 @@
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/User/Test/test.c" />
         <option value="$PROJECT_DIR$/User/gp2y/bsp_gp2y.c" />
-        <option value="$PROJECT_DIR$/User/Test/test.h" />
         <option value="$PROJECT_DIR$/README.md" />
+        <option value="$PROJECT_DIR$/User/Test/test.h" />
       </list>
     </option>
   </component>
@@ -302,17 +348,8 @@
             <path>
               <item name="Air_Iot" type="b2602c69:ProjectViewProjectNode" />
               <item name="Air-Iot" type="462c0819:PsiDirectoryNode" />
-              <item name="传感器说明书" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Air_Iot" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Air-Iot" type="462c0819:PsiDirectoryNode" />
-              <item name="实验现象" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Air_Iot" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Air-Iot" type="462c0819:PsiDirectoryNode" />
-              <item name="网络调试工具" type="462c0819:PsiDirectoryNode" />
+              <item name="User" type="462c0819:PsiDirectoryNode" />
+              <item name="Test" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -328,12 +365,13 @@
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\Air\Air-Iot\传感器说明书" />
-      <recent name="D:\Air\Air-Iot\网络调试工具" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\Air\Air-Iot\User\pm25" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Air\Air-Iot\传感器说明书" />
+      <recent name="D:\Air\Air-Iot\实验现象" />
+      <recent name="D:\Air\Air-Iot\网络调试工具" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -374,6 +412,8 @@
       <workItem from="1545619753287" duration="695000" />
       <workItem from="1545706634923" duration="982000" />
       <workItem from="1546169360655" duration="925000" />
+      <workItem from="1546429818378" duration="118000" />
+      <workItem from="1557730831797" duration="2739000" />
     </task>
     <task id="LOCAL-00001" summary="Air Iot WIFI通信部分配置完成">
       <created>1544535917624</created>
@@ -417,17 +457,24 @@
       <option name="project" value="LOCAL" />
       <updated>1545707589152</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="update readme">
+      <created>1546429908188</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1546429908188</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="26868000" />
+    <option name="totallyTimeSpent" value="29725000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24089068" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24898785" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -441,7 +488,7 @@
       <window_info anchor="bottom" id="Version Control" order="8" />
       <window_info anchor="bottom" id="Terminal" order="9" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
-      <window_info anchor="bottom" id="CMake" order="11" visible="true" weight="0.33674964" />
+      <window_info anchor="bottom" id="CMake" order="11" weight="0.33674964" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -585,20 +632,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/User/Test/test.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-58">
-          <caret line="15" column="61" lean-forward="true" selection-start-line="15" selection-start-column="61" selection-end-line="15" selection-end-column="61" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/User/Test/test.c">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1197">
-          <caret line="57" selection-start-line="57" selection-end-line="57" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/User/Common/Common.c">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="378">
@@ -649,11 +682,25 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="250">
-            <caret line="71" column="26" selection-start-line="71" selection-start-column="26" selection-end-line="71" selection-end-column="26" />
+        <state split_layout="SECOND">
+          <first_editor relative-caret-position="105">
+            <caret line="50" selection-start-line="50" selection-end-line="50" />
           </first_editor>
           <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/User/Test/test.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="17" column="13" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/User/Test/test.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="231">
+          <caret line="47" column="15" lean-forward="true" selection-start-line="47" selection-start-column="15" selection-end-line="47" selection-end-column="15" />
         </state>
       </provider>
     </entry>
